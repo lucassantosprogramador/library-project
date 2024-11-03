@@ -1,0 +1,97 @@
+#text {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  margin-top: 6rem;
+  padding: 7.5rem 2rem;
+
+  position: relative;
+
+  font: var(--subtitle);
+
+  & .book, & .ouijaIn, & .cristalIn {
+    opacity: 50%;
+  }
+
+  &:hover {
+    .book {
+      animation: startIn 500ms ease forwards;  
+      span {
+        color: var(--blue-light);
+      }
+    }
+
+    .ouijaIn {
+      animation: startIn 500ms 700ms ease forwards;  
+      span {
+        color: var(--blue-light);
+      }
+    }
+
+    .cristalIn {
+      animation: startIn 500ms 1400ms ease forwards;  
+      span {
+        color: var(--blue-light);
+      }
+    }
+
+    .img-1 {
+      animation: startIn 500ms 700ms ease forwards; 
+    }
+    .img-2 {
+      animation: startIn 500ms ease forwards;  
+    }
+    .img-3 {
+      animation: startIn 500ms 1400ms ease forwards;  
+    }
+}
+  
+  & p {
+    width: 60ch;
+    text-align: center;
+    & strong {
+      font-weight: 500;
+    }
+
+    & span {
+      font-weight: 700;
+    }
+    }
+
+  
+  }
+
+  & .img-text {
+    & img {
+      position: absolute;
+      width: 5rem;
+      aspect-ratio: 1/1;
+    }
+    
+    & .img-1 {
+      transform:rotate(100deg);
+      opacity: 0;      
+
+      
+    }
+    
+    & .img-2 {
+      transform:rotate(30deg);
+      top: 2rem;
+      left: 45%;
+      opacity: 0;   
+    }
+
+    & .img-3 {
+      transform:rotate(-30deg);
+      right: 10rem;
+      opacity: 0;   
+    }
+}
+
+@keyframes textIn {
+  to {
+    opacity: 1;
+
+    }
+}

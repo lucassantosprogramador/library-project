@@ -1,0 +1,14 @@
+header {
+  & nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 3.5rem;
+
+    & .button-nav {
+      padding: .75rem 1.25rem;
+      background-color: var(--pink-dark);
+      border-radius: 1rem;
+    }
+  }
+}

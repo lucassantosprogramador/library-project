@@ -1,0 +1,73 @@
+:root {
+  --pink-light: #c59dd2;
+  --pink-base: #9547a5;
+  --pink-dark: #7d298a;
+  --pink-low: #3f0f41;
+
+  --blue-light: #73b6d2;
+  --blue-base: #358bb9;
+  --blue-mid: #2374a4;
+  --blue-dark: #144a72;
+  --blue-low: #08233c;
+
+  --shape-stroke: #002347;
+  --shape-hover: #001933;
+  --shape-base: #000F1F;
+  --shape-background: #00050a;
+
+  --text-title: #f8fbfb;
+  --text-body: #e2e7e9;
+  --text-label: #bac6c9;
+
+  --font: "Raleway", sans-serif;
+
+  --title-lg: 700 3rem var(--font);
+  --title-md: 700 2.5rem var(--font);
+  --title-sm: 700 2rem var(--font);
+  --title-sx: 700 1rem var(--font);
+
+  --subtitle: 600 2rem/2.0 var(--font);
+
+  --body-base: 1rem/1.4 var(--font);
+
+  --body-lg: 700 1.25rem/1.4 var(--font);
+  --body-md: 700 1rem/1.4 var(--font);
+  --body-sm: .875rem/1.4 var(--font);
+  --body-xs: .75rem/1.4 var(--font);
+
+  --button: 700 .875rem var(--font);
+  --link: 600 .875rem var(--font);
+
+  --tag: 700 .625rem var(--font);
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font: var(--body-base);
+  color: var(--text-body);
+  background: var(--shape-background);
+}
+
+.container {
+  margin-inline: 10rem;
+}
+
+a {
+  text-decoration: none;
+  color: var(--text-title);
+  max-width: 1280px;
+}
+
+h2 {
+  font: var(--title-sm);
+}
+
+ul {
+  list-style: none;
+}
