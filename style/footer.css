@@ -32,6 +32,26 @@ footer {
           }
         }
       }
+
+    }
+
+    & .links {
+      display: flex;
+      gap: 3.5rem;
+
+      & ul {
+        & li {
+          margin-bottom: .75rem;
+          font: var(--link);
+          color: var(--blue-light);
+          &:nth-child(1) {
+            margin-bottom: 1.25rem;
+            font: var(--title-sx);
+            color: var(--text-body);
+          }
+
+        }
+      }
     }
   }
 }
